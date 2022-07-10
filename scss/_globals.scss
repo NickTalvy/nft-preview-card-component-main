@@ -1,0 +1,52 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: $font-md;
+    font-weight: 300;
+    line-height: 1.55;
+    color: $softBlue;
+    background-color: $veryDarkBlueMainBG;
+}
+
+// Flexbox
+.flex {
+    display: flex;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
+}
+
+a {
+    color: $white;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover {
+        color: $cyan;
+    }
+}
+
+.attribution {
+    font-size: $font-sm;
+    text-align: center;
+}

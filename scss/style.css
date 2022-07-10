@@ -1,0 +1,156 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 300;
+  line-height: 1.55;
+  color: hsl(215deg, 51%, 70%);
+  background-color: hsl(217deg, 54%, 11%);
+}
+
+.flex {
+  display: flex;
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+a {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  flex-direction: column;
+  width: 86%;
+  border-radius: 1rem;
+  padding: 1.45rem;
+  background-color: hsl(216deg, 50%, 16%);
+  max-width: 19.8rem;
+}
+
+.img-container {
+  position: relative;
+  cursor: pointer;
+}
+.img-container .cube {
+  width: 100%;
+  border-radius: 0.6rem;
+}
+.img-container .overlay {
+  background-color: hsl(178deg, 100%, 50%);
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 0.8rem;
+  display: none;
+}
+.img-container .eye {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.img-container:hover .overlay, .img-container:hover .eye {
+  display: block;
+}
+
+.card h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-top: 0.9rem;
+}
+
+.card p {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.4rem;
+}
+
+.eth, .time {
+  padding-bottom: 0.4rem;
+}
+.eth p, .time p {
+  font-size: 0.9375rem;
+  padding-left: 8px;
+}
+
+.eth p {
+  color: hsl(178deg, 100%, 50%);
+  font-weight: 600;
+}
+
+hr {
+  padding: 0;
+  width: 100%;
+  border: 1px solid hsl(215deg, 32%, 27%);
+}
+
+.avatar img {
+  width: 32px;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+}
+
+.credits {
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    line-height: 1.5;
+  }
+  .title h1 {
+    font-size: 1.24rem;
+    padding-top: 0.65rem;
+  }
+  .title p {
+    font-size: 1.01rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+  }
+  .eth, .time {
+    padding-bottom: 0.8rem;
+  }
+  .author p {
+    font-size: 0.925rem;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

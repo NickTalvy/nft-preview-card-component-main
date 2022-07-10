@@ -1,0 +1,93 @@
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.card {
+    flex-direction: column;
+    width: 86%;
+    border-radius: 1rem;
+    padding: 1.45rem;
+    background-color: $veryDarkBlueCardBG;
+    max-width: 19.8rem;
+}
+
+.img-container {
+    position: relative;
+    cursor: pointer;
+
+    .cube {
+        width: 100%;
+        border-radius: 0.6rem;
+    }
+
+    .overlay {
+        background-color: $cyan;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 0.8rem;
+        display: none;
+    }
+
+    .eye {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    &:hover {
+        .overlay, .eye {
+            display: block;
+        }
+    }
+}
+
+.card h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 0.9rem;
+}
+
+.card p {
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.4rem;
+}
+
+.eth, .time {
+    padding-bottom: 0.4rem;
+
+    p {
+        font-size: 0.9375rem;
+        padding-left: 8px;
+    }
+}
+
+.eth p {
+    color: $cyan;
+    font-weight: 600;
+}
+
+hr {
+    padding: 0;
+    width: 100%;
+    border: 1px solid $veryDarkBlueLine;
+}
+
+.avatar img {
+    width: 32px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 1px solid $white;
+}
+
+.credits {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
