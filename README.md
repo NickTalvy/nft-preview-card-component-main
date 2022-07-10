@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Code](https://your-solution-url.com)
-- Live Site URL: [See It Live!](https://your-live-site-url.com)
+- Solution URL: [My Code](https://github.com/NickTalvy/nft-preview-card-component-main)
+- Live Site URL: [See It Live!](https://nicktalvy.github.io/nft-preview-card-component-main/)
 
 ## My process
 
